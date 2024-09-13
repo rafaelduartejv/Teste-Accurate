@@ -1,7 +1,9 @@
 package com.calculadora.Teste.Accurate.service;
 
+import com.calculadora.Teste.Accurate.exception.CalculoException;
 import com.calculadora.Teste.Accurate.model.ResultadoCalculo;
 import com.calculadora.Teste.Accurate.repository.CalculadoraRepository;
+import com.calculadora.Teste.Accurate.util.AvaliadorExpressao;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -20,7 +22,7 @@ public class CalculadoraService {
         double resultado;
         try {
             resultado = AvaliadorExpressao.avaliar(expressao);
-        } catch (ExcecaoCalculo e) {
+        } catch (CalculoException e) {
             throw new IllegalArgumentException("Expressão inválida: " + expressao, e);
         } catch (Exception e) {
             throw new IllegalArgumentException("Erro inesperado ao avaliar a expressão: " + expressao, e);

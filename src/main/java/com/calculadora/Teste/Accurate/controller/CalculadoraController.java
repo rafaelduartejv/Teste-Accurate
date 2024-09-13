@@ -2,6 +2,7 @@ package com.accurate.calculator.controller;
 
 import com.calculadora.Teste.Accurate.model.Calculo;
 import com.calculadora.Teste.Accurate.model.ResultadoCalculo;
+import com.calculadora.Teste.Accurate.service.CalculadoraService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.PostMapping;
@@ -11,7 +12,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 @RestController
 @RequestMapping("/api/calculadora")
-public class CalculadoraControlador {
+public class CalculadoraController {
 
     @Autowired
     private CalculadoraService calculadoraService;
