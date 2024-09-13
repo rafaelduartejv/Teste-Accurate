@@ -1,4 +1,4 @@
-package com.accurate.calculator.controller;
+package com.calculadora.Teste.Accurate.controller;
 
 import com.calculadora.Teste.Accurate.model.Calculo;
 import com.calculadora.Teste.Accurate.model.ResultadoCalculo;
