@@ -1,6 +1,6 @@
 # Calculadora API
 
-A API de Calculadora é um microsserviço desenvolvido com Spring Boot que permite avaliar expressões matemáticas e armazenar os resultados em um banco de dados. Esta aplicação oferece uma interface RESTful para realizar cálculos e fornece uma estrutura para armazenar e recuperar os resultados calculados.
+A API de Calculadora é um microsserviço desenvolvido com Spring Boot que permite avaliar expressões matemáticas e armazenar os resultados em um banco de dados.
 
 ## Tecnologias Usadas
 
